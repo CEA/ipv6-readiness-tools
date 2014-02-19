@@ -1,0 +1,52 @@
+#########################
+# v6App Java Properties #
+#########################
+
+
+# Comma delimited list of IPv6 domains. These domains
+
+# are used to test AAAA DNS resolution. Ensure that all
+
+# domains return at least one AAAA DNS record.
+
+
+ipv6Domains=ipv6.google.com,www.v6.facebook.com
+
+
+
+# Comma delimited list of IPv6 addresses on the Internet.
+
+# These addresses are used to test IPv6 Internet connectivity
+
+# when AAAA DNS resolution fails on the local host. This should
+
+# be checked for validity from time to time and updated as needed:
+
+# ipv6.google.com, google.com, www.yahoo.com, www.iana.org
+
+
+ipv6TestAddrs=2607:f8b0:4004:802::1014,2607:f8b0:4004:802::1009,2001:4998:f00b:1fe::3000,2620:0:2d0:200::8
+
+
+
+# Duration (in seconds) of the network discovery task
+
+
+networkDiscoverySecs=90
+
+
+
+# Comma delimited list of interface names for network discovery.
+
+# Use the 'all' value to scan all interfaces with an IPv6 address.
+
+# When specifying linux interfaces, use the name identified by the
+
+# 'ifconfig' command (e.g., eth0, wlan0, etc.).  When specifying
+
+# Windows interfaces, use what is listed as the interface
+
+# Description by the 'ipconfig /all' command.
+
+
+networkDiscoveryIfcs=all
